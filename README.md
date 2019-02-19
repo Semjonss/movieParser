@@ -1,9 +1,16 @@
+to create .jar file
+gradle build 
+
+start app
+gradle bootRun
+
+
 links:
 swagger ui: http://localhost:8080/swagger-ui.html
 
 I chose swagger for create documentation of API because it's easy way to create interface for request
 I try to use simple way to create background task, so i souse @Async annotation. i have some problem
-with stop this tusk, but use  Future, it have a process  how to do it. but i have som problem with
+with stop this task, but use  Future, it have a process  how to do it. but i have som problem with
 task state, so i chose sharing simple date with background task and main tread, it's not very good
 solution but it fast.
 I did not spend much time for DefaultMovieService it can be better.
